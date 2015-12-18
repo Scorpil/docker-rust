@@ -11,9 +11,8 @@ RUN apt-get update && \
 
 ENV DEBIAN_FRONTEND=noninteractive \
     RUST_HOME=/rust \
-    RUST_VERSION=beta
 
-ENV RUST_ARCHIVE=rust-$RUST_VERSION-x86_64-unknown-linux-gnu.tar.gz
+RUN RUST_ARCHIVE=rust-beta-i686-unknown-linux-gnu.tar.gz
 ENV RUST_DOWNLOAD_URL=https://static.rust-lang.org/dist/$RUST_ARCHIVE
 
 ENV PATH=$PATH:$RUST_HOME
