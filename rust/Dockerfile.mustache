@@ -10,16 +10,16 @@ RUN apt-get update && \
     && rm -rf /var/lib/apt/lists/*
 
 ENV DEBIAN_FRONTEND=noninteractive \
-    RUST_HOME=/rust \
+    RUST_HOME=/rust
 
-RUN RUST_ARCHIVE={{ archive }}
+ENV RUST_ARCHIVE={{ archive }}
 ENV RUST_DOWNLOAD_URL=https://static.rust-lang.org/dist/$RUST_ARCHIVE
 
 ENV PATH=$PATH:$RUST_HOME
 RUN mkdir $RUST_HOME
 WORKDIR $RUST_HOME
 
-RUN curl -fsSL $RUST_DOWNLOAD_URL -o $RUST_ARCHIVE \
+RUN curl -fsOSL $RUST_DOWNLOAD_URL \
     && curl -s $RUST_DOWNLOAD_URL.sha256 | sha256sum -c - \
     && tar -C $RUST_HOME -xzf $RUST_ARCHIVE --strip-components=1 \
     && rm $RUST_ARCHIVE \
