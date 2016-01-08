@@ -1,4 +1,4 @@
-FROM rust:{{ channel }}
+FROM scorpil/rust:{{ channel }}
 
 RUN mkdir -p {{ app_home }}
 WORKDIR {{ app_home }}

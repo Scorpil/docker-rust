@@ -1,4 +1,4 @@
-FROM rust:nightly
+FROM scorpil/rust:nightly
 
 RUN mkdir -p /rust/app
 WORKDIR /rust/app

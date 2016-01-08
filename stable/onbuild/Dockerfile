@@ -1,4 +1,4 @@
-FROM rust:stable
+FROM scorpil/rust:stable
 
 RUN mkdir -p /rust/app
 WORKDIR /rust/app
