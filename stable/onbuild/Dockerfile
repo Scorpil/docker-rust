@@ -6,4 +6,4 @@ WORKDIR /rust/app
 ONBUILD COPY . /rust/app
 ONBUILD RUN cargo build --release
 
-CMD ./target/release/ifp_downloader
+CMD cargo run --release
