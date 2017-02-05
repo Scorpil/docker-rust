@@ -13,7 +13,7 @@ RUN apt-get update && \
        --no-install-recommends \
     && rm -rf /var/lib/apt/lists/*
 
-ENV RUST_ARCHIVE=rust-1.15.0-x86_64-unknown-linux-gnu.tar.gz
+ENV RUST_ARCHIVE=rust-1.14.0-x86_64-unknown-linux-gnu.tar.gz
 ENV RUST_DOWNLOAD_URL=https://static.rust-lang.org/dist/$RUST_ARCHIVE
 
 RUN mkdir /rust
