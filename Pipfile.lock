@@ -1,0 +1,45 @@
+{
+    "default": {
+        "websocket-client": {
+            "version": "==0.40.0",
+            "hash": "sha256:40ac14a0c54e14d22809a5c8d553de5a2ae45de3c60105fae53bcb281b3fe6fb"
+        },
+        "pyyaml": {
+            "version": "==3.12",
+            "hash": "sha256:592766c6303207a20efc445587778322d7f73b161bd994f227adaa341ba212ab"
+        },
+        "pystache": {
+            "version": "==0.5.4",
+            "hash": "sha256:f7bbc265fb957b4d6c7c042b336563179444ab313fb93a719759111eabd3b85a"
+        },
+        "requests": {
+            "version": "==2.13.0",
+            "hash": "sha256:1a720e8862a41aa22e339373b526f508ef0c8988baf48b84d3fc891a8e237efb"
+        },
+        "six": {
+            "version": "==1.10.0",
+            "hash": "sha256:0ff78c403d9bccf5a425a6d31a12aa6b47f1c21ca4dc2573a7e2f32a97335eb1"
+        },
+        "docker": {
+            "version": "==2.1.0",
+            "hash": "sha256:4c0588b6b640983a01c86175c2a42cc0777bcef10c5ae82ad505d3207141b4c8"
+        },
+        "docker-pycreds": {
+            "version": "==0.2.1",
+            "hash": "sha256:58d2688f92de5d6f1a6ac4fe25da461232f0e0a4c1212b93b256b046b2d714a9"
+        }
+    },
+    "develop": {},
+    "_meta": {
+        "sources": [
+            {
+                "url": "https://pypi.python.org/simple",
+                "verify_ssl": true
+            }
+        ],
+        "requires": {},
+        "hash": {
+            "sha256": "df094fcce22ac12b69b2f943791b237bd3232ce7b3485f25f663bbd6e17b4d96"
+        }
+    }
+}
