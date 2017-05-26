@@ -24,7 +24,8 @@ def build():
 
         image = client.images.build(
             fileobj=file(image_data['path'], 'r'),
-            tag="{}:{}".format(manifest.dockerhub_repo, main_tag))
+            tag="{}:{}".format(manifest.dockerhub_repo, main_tag),
+            nocache=True)
         rustc_version = client.containers.run(image.id, command="rustc -V").strip()
         manifest.containers.update(main_tag,
                                    image=image.short_id,
